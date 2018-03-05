@@ -1,0 +1,44 @@
+// --------------------------------------------------------------
+// # Configs.sass
+// # versão 1.0
+// # descriçao: configurações globais e padrões do site
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+// # Media Queryes
+// --------------------------------------------------------------
+$information-phone: "only screen and (max-width: 420px)" //Smartphone
+$information-tablet: "only screen and (min-width: 768px)" //Tablet
+$information-desktop: "only screen and (min-width: 1280px)" //Desktop
+
+// --------------------------------------------------------------
+// # Start Website style
+// --------------------------------------------------------------
+html
+	@media #{$information-phone}
+		background: #ffffff
+		font-family: 'Open Sans', 'sans-serif'
+		font-size: 62.5%
+		overflow-x: hidden
+	
+	@media #{$information-desktop}
+		background: #ffffff
+		font-family: 'Open Sans', 'sans-serif'
+		font-size: 62.5%
+		overflow-x: hidden
+
+		b
+			font-weight: 500
+		
+
+a, a:hover
+	text-decoration: none
+	color: auto
+
+
+// --------------------------------------------------------------
+// # configs
+// --------------------------------------------------------------
+
+// font sizes
+$fs-menu: 16px

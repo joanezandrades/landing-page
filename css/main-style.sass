@@ -1,0 +1,1773 @@
+// @import 'configs.sass'
+
+// --------------------------------------------------------------
+// # Media Queryes
+// --------------------------------------------------------------
+$information-phone: "only screen and (max-width: 420px)" //Smartphone
+$information-tablet: "only screen and (min-width: 768px)" //Tablet
+$information-desktop: "only screen and (min-width: 1280px)" //Desktop
+
+// Font-family
+h1,h2,h3,h4,h5,h6,p,span,ul,li,label,a,address,ol
+    font-family: 'Open Sans', 'sans-serif'
+a, a:hover
+    text-decoration: none
+
+// Paleta de cores
+$color-1:   #ffffff // White color
+$color-2:   #f5f5f5 // White secondary color
+
+$color-3:   #851934 // Red color
+$color-4:   #F24738 // Orange color
+
+$color-5:   #58595A // Black color
+$color-6:   #071930 // Blue color
+
+$color-7:   rgba(88, 89, 90, .1) //#58595A - shadow
+
+// ----------------
+
+// Font-sizes
+$extra-title:   72px
+$big-title:     36px
+$medium-title:  26px
+$small-title:   22px
+
+$big-text:      20px
+$medium-text:   18px
+$small-text:    16px
+
+// Font weight
+$text-bold:     700
+$text-regular:  400
+$text-light:    300
+
+
+// Transitions
+$transition: 500ms ease 200ms
+$duration: .4s
+$delay: .1s
+
+
+// arrumar isso (classe nativa do bootstrap)
+html
+    margin-top: 0 !important
+.container-fluid
+    display: flex
+@media #{$information-phone}
+    html
+        margin-top: 0 !important
+    /* Header */
+    .main-header
+        width: 100%
+        height: 90px
+
+        top: 0
+        left: 0
+
+        z-index: 999
+        position: fixed
+
+        // -> Logo
+        .site-logo
+            height: 85px
+
+            text-align: left
+
+            .custom-logo
+                width: auto
+                height: 85px
+
+                margin: 2.5px auto
+
+        // -> main menu
+        .container-menu
+            background: $color-6
+
+            width: 100%
+            height: 100%
+
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+            position: fixed
+            z-index: 99
+            
+            display: none
+
+            .main-nav
+                width: 90%
+                height: auto
+
+                margin: 5%
+                margin-top: 45%
+                
+                #close-menu
+                    width: 100%
+
+                    font-size: $extra-title
+                    text-align: center
+                    color: $color-1
+    
+                    padding: 10px
+
+                    top: 15px
+                    left: 0
+                    position: absolute
+                
+                .hotpage-main-menu
+                    height: auto
+
+                    display: flex
+                    flex-wrap: wrap
+                    align-content: center
+
+                    .menu-item
+                        width: 100%
+                        height: 50px
+
+                        margin: 10px auto
+
+                        text-align: center
+
+                        a
+                            font-size: $small-title
+                            font-weight: $text-regular
+                            color: $color-1
+                            line-height: 2.2
+
+        // -> Btns Mobile
+        .btns-mobile
+            position: relative
+            text-align: right
+
+            #open-menu
+                font-size: $big-title
+                color: $color-1
+
+                padding: 10px
+
+                top: 10px
+                right: 0
+                position: absolute
+
+    /* widget preço homepage */
+    #open-price-mobile
+        background: $color-6
+
+        width: 44px
+        height: 44px
+
+        border-radius: 3px
+
+        font-size: $small-title
+        color: $color-1
+        text-align: center
+        line-height: 2
+
+        right: 5px
+        top: 110px
+        position: absolute
+
+    .container_widget
+        background: $color-1
+        width: 260px
+        height: 320px
+
+        border-radius: 4px
+
+        right: -400px
+        top: 110px
+        position: absolute
+
+        overflow: hidden
+
+        transition: $transition
+
+        .head_widget
+            background: $color-6
+            width: 100%
+            height: 60px
+
+            padding: 15px 10px
+
+            border-top-left-radius: 4px
+            border-top-right-radius: 4px
+
+            position: relative
+
+            #close-widget,
+            #open-widget
+                display: none
+
+            .btn-widget
+                font-size: $big-text
+                color: $color-2
+
+                cursor: pointer
+
+                top: 20px
+                right: 10px
+                position: absolute
+
+            .title
+                font-size: $small-text
+                font-weight: $text-bold
+                color: $color-1
+                line-height: 1.9
+                text-align: left
+
+                margin-left: 15px
+
+                display: block
+
+        .content_widget
+            width: 100%
+            height: 260px
+
+            margin: 0
+            padding: 10px
+
+            .list
+                width: 100%
+                height: 130px
+                margin: 5px 0
+
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+
+                .list-item
+                    width: 100%
+                    height: auto
+                    margin: 5px auto
+
+                    text-align: center
+
+                    display: block
+
+
+                    .text
+                        font-size: $small-text
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+                    
+                    .small-price
+                        font-size: $big-text
+                        font-weight: $text-light
+
+                        margin: 4px auto
+                        display: block
+
+                    .medium-price
+                        font-size: $medium-title
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+
+                    .extra-price
+                        font-size: $big-title
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+
+            .sell-button
+                background: $color-4
+                width: 150px
+                height: 45px
+
+                margin: 4px auto
+                border-radius: 4px
+                display: block
+
+                font-size: $small-text
+                font-weight: $text-bold
+                line-height: 2.8 
+                color: $color-2
+                text-align: center
+
+                .icon
+                    font-size: $medium-text
+                    color: $color-2
+                    margin: 0 5px
+
+            .small-text
+                font-size: 12px
+                text-align: center
+                color: $color-5
+
+                margin: 8px auto
+
+                display: block
+
+    .widget_minimize
+        right: 40px
+
+    /* Homepage */
+    #home
+        background: $color-6
+        width: 100%
+        height: 100vh
+
+        position: relative
+        z-index: 1
+
+        overflow: hidden
+
+        // -> Cover
+        .cover-background
+            background-size: auto 100%
+            background-position: center
+
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+            z-index: -9
+            opacity: .6
+            position: absolute
+
+        // -> Content home
+        .wrapper-content
+            height: 75%
+
+            top: 120px
+            position: relative
+
+            flex-wrap: wrap
+            align-content: center
+
+            .big-title
+                font-size: $big-title
+                font-weight: $text-bold
+                color: $color-1
+                text-align: center
+                line-height: 1.6
+
+                margin: 25px auto
+
+            p
+                font-size: $medium-text
+                font-weight: $text-light
+                color: $color-1
+                text-align: center
+                line-height: 1.6
+
+                margin: 15px auto
+
+                display: none
+
+            .btn-video
+                width: 100%
+                height: 75px
+
+                margin: 15px auto
+                display: flex
+
+                align-items: center
+
+                .icon-big
+                    font-size: $extra-title
+                    color: $color-1
+                    margin: 0 10px
+
+                .text-video
+                    font-size: $small-text
+                    line-height: 1.6
+                    color: $color-1
+                    margin: 0 10px
+
+            #wrapper-iframe
+                background: rgba(0, 0, 0, .7)
+
+                width: 100%
+                height: 100%
+                
+                top: 0
+                left: 0
+                position: fixed
+                z-index: 999
+
+                display: none
+
+                #close-video
+                    font-size: $medium-title
+                    color: $color-1
+
+                    cursor: pointer
+
+                    top: 120px
+                    right: 20px
+                    position: absolute
+
+                iframe
+                    width: 100%
+                    height: 280px
+
+                    margin: 150px auto
+                    display: block
+
+    #product-infos
+        background: $color-2
+
+        width: 100%
+        min-height: 1050px
+
+        padding: 45px 0
+
+        .title-section
+            font-size: $medium-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-6
+
+            margin-top: 110px
+            display: block
+
+        .wrapper-content
+            margin-top: 20px
+
+            padding: 25px 0
+
+        .list-posts
+            height: 100%
+
+            .post-item
+                min-height: 470px
+
+                text-align: center
+                padding: 10px 15px
+                border-bottom: 1px solid $color-7
+
+                display: flex
+                align-content: center
+                flex-wrap: wrap
+
+                img
+                    width: 72px
+                    height: 72px
+                    margin: 5px auto
+
+                .title
+                    width: 100%
+
+                    font-size: $big-text
+                    font-weight: $text-bold
+                    color: $color-5
+                    line-height: 1.6
+
+                    padding: 0 15px
+                    margin: 15px auto
+                    display: block
+                
+                p
+                    font-size: $small-text
+                    font-weight: $text-light
+                    line-height: 1.6
+
+                    margin: 5px auto
+        
+        .slick-dots
+            display: flex
+            justify-content: space-around
+
+            margin: 20px auto
+            margin-top: 10px
+            padding: 0 
+
+            li
+                width: 36px
+                height: 36px
+
+                display: flex
+                align-items: center
+
+                border-radius: 100%
+                border: 1px solid $color-1
+
+                position: relative
+
+                button
+                    width: 100%
+                    height: 100%
+
+                    border-radius: 100%
+                    border: none
+                    position: absolute
+
+    #product-differential
+        background: $color-1
+
+        width: 100%
+        min-height: 1150px
+        padding: 45px 0
+
+        position: relative
+
+        .title-section
+            font-size: $medium-title
+            font-weight: $text-bold
+            line-height: 1.6
+            text-align: center
+            color: $color-6
+
+            margin-top: 80px
+            margin-bottom: 20px
+            padding: 0 10px
+            display: block
+
+        .wrapper-content
+            height: auto
+
+            margin: 25px auto
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+
+            .tip-item
+                width: calc(100% - 20px)
+                
+                margin: 25px 5px
+                padding: 10px 0
+                
+                display: flex
+                align-items: center
+                position: relative
+
+                .attachment-icon-small
+                    width: 64px
+                    height: 64px
+
+                    top: 15px
+                    left: 5px
+                    position: absolute
+
+                .wrap-text
+                    width: calc(100% - 70px)
+                    height: 100%
+
+                    margin: 0
+                    margin-left: 85px
+                    padding: 0 5px
+
+                    .title
+                        font-size: $small-title
+                        font-weight: $text-bold
+                        color: $color-3
+                        line-height: 1.6
+
+                        margin-bottom: 10px
+
+                    p
+                        font-size: $small-text
+                        font-weight: $text-light
+                        color: $color-5
+                        line-height: 1.6
+
+    #product-price
+        background: $color-6
+        width: 100%
+
+        padding: 90px 0
+        display: flex
+        align-items: center
+
+        position: relative
+
+        .title-section
+            font-size: $medium-title
+            font-weight: $text-bold
+            line-height: 1.6
+            text-align: center
+            color: $color-1
+
+            display: block
+
+            top: 50px
+            position: relative
+
+
+        .wrapper-price-product
+            width: 100%
+
+            margin: 40px auto
+
+            display: flex
+            flex-wrap: wrap
+
+            .old-price
+                width: auto
+                height: auto
+
+                padding: 10px 0
+
+                top: 50px
+                position: relative
+
+                &:after
+                    content: ''
+                    background: $color-1
+                    width: 110px
+                    height: 4px
+
+                    bottom: 35px
+                    position: absolute
+                    opacity: .7
+
+            .promotional-price
+                width: auto
+                height: auto
+
+                margin: 25px auto
+                margin-top: 50px
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+            .tag
+                font-size: $small-title
+                font-weight: $text-bold
+                color: $color-2
+                margin: 15px 0
+
+            .medium-title
+                font-size: $medium-title
+                font-weight: $text-light
+                color: $color-2
+                letter-spacing: 2px
+                
+                margin: 15px auto
+                display: block
+
+            .extra-title
+                width: 100%
+                display: block
+
+                font-size: $extra-title
+                font-weight: $text-bold
+                color: $color-1
+                text-align: center
+                letter-spacing: 2px
+
+                margin: 15px auto
+
+
+            .big-button
+                background: $color-4
+                width: 420px
+                height: 100px
+
+                margin: 25px auto
+                border-radius: 3px
+
+                display: block
+
+                font-size: $medium-title
+                font-weight: $text-bold
+                color: $color-2
+                text-align: center
+                line-height: 4
+            
+        .text-security
+            font-size: $medium-text
+            font-weight: $text-light
+            line-height: 1.6
+            color: $color-2
+            text-align: center
+
+            display: block
+
+            i
+                margin: 0 10px
+
+    #product-ensure
+        background: $color-2
+        width: 100%
+        min-height: 910px
+
+        padding: 90px 0
+
+        position: relative
+
+        .icon-safe
+            background: $color-1
+            width: 110px
+            height: 110px
+
+            font-size: $big-title
+            text-align: center
+            line-height: 3.2
+
+            border-radius: 100%
+
+            top: -55px
+            left: calc(100% / 2 - 55px)
+            position: absolute
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            line-height: 1.6
+            text-align: center
+            color: $color-5
+
+            padding: 0 10px
+            display: block
+
+            top: 50px
+            position: relative
+
+        .wrapper-content
+            top: 50px
+            position: relative
+
+        .list-of-ensurance
+            margin: 55px auto
+
+            .item-ensurance
+                width: 100%
+                min-height: 420px
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+                .title
+                    font-size: $small-title
+                    font-weight: $text-bold
+                    line-height: 1.6
+                    color: $color-3
+                    text-align: center
+
+                    padding: 0 10px
+                    margin: 15px auto
+
+                .excerpt
+                    font-size: $medium-text
+                    font-weight: $text-light
+                    line-height: 1.6
+                    color: $color-5
+                    text-align: center
+
+                    margin: auto auto
+                    padding: 15px 5px
+                
+                .line-block
+                    background: $color-5
+                    width: 25%
+                    height: 1px
+
+                    margin: 15px auto
+
+                    opacity: .3
+
+                    display: block
+
+            .slick-dots
+                width: auto
+                height: 50px
+
+                margin: 5px auto
+                padding: 0 50px
+
+                display: flex
+                align-content: center
+                align-items: center
+                justify-content: space-around
+
+                li,button
+                    width: 40px
+                    height: 40px
+
+                    border-radius: 100%
+                    border: none
+
+    #product-support
+        background: $color-1
+        width: 100%
+        min-height: 100vh
+
+        padding: 90px 0
+        position: relative
+
+        .title-section
+            font-size: $medium-title
+            font-weight: $text-bold
+            text-align: center
+            line-height: 1.6
+            color: $color-5
+
+            display: block
+
+            top: 50px
+            position: relative
+            
+        .wrapper-content
+            margin-top: 75px
+        
+            .list-of-faqs
+                width: 100%
+                height: 100%
+
+                padding: 10px 5px
+
+                .faq-item
+                    width: 100%
+                    height: 100px
+
+                    border: none
+                    border-radius: 3px
+                    box-shadow: 0px 0px 5px $color-7
+
+                    padding: 10px 10px
+                    padding-right: 20px
+                    margin: 15px auto
+
+                    overflow: hidden
+                    position: relative
+                    cursor: pointer
+
+                    transition: .3s ease-in-all
+
+                    .icon
+                        font-size: $medium-title
+                        color: $color-4
+
+                        top: 38px
+                        right: 15px
+                        position: absolute
+
+                    .title
+                        font-size: $small-text
+                        font-weight: $text-bold
+                        line-height: 1.6
+                        color: $color-5
+                    
+                    .answer
+                        margin-top: 35px
+                        margin-bottom: 15px
+
+                        p
+                            font-size: $small-text
+                            font-weight: $text-regular
+                            line-height: 1.8
+
+                            opacity: .8
+
+                    &:after
+                        content: ''
+                        background: $color-7
+                        // opacity: .1
+
+                        width: 100%
+                        height: 1px
+
+                        top: 101px
+                        left: 0
+                        position: absolute
+
+                .faq-active
+                    height: auto
+                    padding: 10px 10px
+
+                    transition: .3s ease-in-all
+
+    #main-footer
+        background: $color-6
+        width: 100%
+        min-height: 320px
+
+        padding: 40px 0
+
+        .container-fluid
+            flex-wrap: wrap
+
+        // Logo
+        .custom-logo-link
+            width: 150px
+            height: 150px
+
+            margin: 10px auto
+            display: block
+
+            .custom-logo
+                width: 100%
+                height: 100%
+
+        // Menu
+        .menu-awp-primary-container
+            min-height: 250px
+            margin: 25px auto
+
+            #menu-awp-primary
+                width: auto
+                height: 100%
+
+                margin: 0 auto
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+                .menu-item
+                    width: 100%
+
+                    font-size: $medium-text
+                    text-align: center
+                    margin: 15px auto
+
+                    display: block
+
+                    a
+                        color: $color-1
+
+@media #{$information-desktop}
+    /* Header */
+    .main-header
+        width: 100%
+        height: 140px
+
+        top: 0
+        right: 0
+        left: 0
+        z-index: 999
+        position: fixed
+
+        // transition: $transition
+        transition-duration: $duration
+        transition-delay: $delay
+
+        // Btns Mobile
+        .btns-mobile
+            display: none
+
+        // -> Logo
+        .site-logo
+            height: 140px
+
+            text-align: center
+            position: relative
+
+            transition: $transition
+            transition-delay: $delay
+
+            .custom-logo
+                width: auto
+                height: 100%
+                
+                margin: 0 auto
+
+        // -> Main Nav
+        .main-nav
+            height: 100px
+            margin: 20px auto
+
+            transition: $transition
+            transition-delay: $delay
+
+            #close-menu
+                display: none
+
+            .hotpage-main-menu
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: space-around
+
+                .menu-item
+                    width: auto
+                    height: 100%
+
+                    padding: 0 5px
+                    margin: 0 20px
+
+                    a
+                        height: 100%
+                        display: block
+
+                        font-size: $small-text
+                        font-weight: $text-bold
+                        color: $color-1
+                        text-transform: capitalize
+                        line-height: 6.5
+
+    .roll-page-active
+        background: $color-1
+        height: 90px
+
+        box-shadow: 2px 2px 10px $color-2
+
+        // transition: $transition
+        transition-duration: $duration
+        transition-delay: $delay
+
+        .site-logo
+            height: 90px
+
+            transition: $transition
+            transition-duration: $duration
+            transition-delay: $delay
+
+        .main-nav
+            height: 90px
+
+            margin: 0
+
+            transition: $transition
+            transition-duration: $duration
+            transition-delay: $delay
+
+            a
+                font-weight: $text-regular !important
+                color: $color-6 !important
+                line-height: 5.8 !important
+
+    /* Main Content */
+    .content
+        // margin-top: 140px
+
+    /* widget preço homepage */
+    #open-price-mobile
+        display: none
+    .container_widget
+        background: $color-1
+        width: 260px
+        height: 320px
+
+        border-radius: 4px
+
+        right: 20px
+        bottom: 10px
+        position: absolute
+
+        overflow: hidden
+
+        transition: $transition
+
+        .head_widget
+            background: $color-6
+            width: 100%
+            height: 60px
+
+            padding: 15px 10px
+
+            border-top-left-radius: 4px
+            border-top-right-radius: 4px
+
+            position: relative
+
+            #close-widget
+                opacity: 1
+                transition: $transition
+            #open-widget
+                opacity: 0
+                transition: $transition
+
+            .btn-widget
+                font-size: $big-text
+                color: $color-2
+
+                cursor: pointer
+
+                top: 20px
+                right: 10px
+                position: absolute
+
+            .title
+                font-size: $small-text
+                font-weight: $text-bold
+                color: $color-1
+                line-height: 1.9
+                text-align: left
+
+                margin-left: 15px
+
+                display: block
+
+        .content_widget
+            width: 100%
+            height: 260px
+
+            margin: 0
+            padding: 10px
+
+            .list
+                width: 100%
+                height: 130px
+                margin: 5px 0
+
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+
+                .list-item
+                    width: 100%
+                    height: auto
+                    margin: 5px auto
+
+                    text-align: center
+
+                    display: block
+
+
+                    .text
+                        font-size: $small-text
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+                    
+                    .small-price
+                        font-size: $big-text
+                        font-weight: $text-light
+
+                        margin: 4px auto
+                        display: block
+
+                    .medium-price
+                        font-size: $medium-title
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+
+                    .extra-price
+                        font-size: $big-title
+                        font-weight: $text-bold
+
+                        margin: 4px auto
+                        display: block
+
+            .sell-button
+                background: $color-4
+                width: 150px
+                height: 45px
+
+                margin: 4px auto
+                border-radius: 4px
+                display: block
+
+                font-size: $small-text
+                font-weight: $text-bold
+                line-height: 2.8 
+                color: $color-2
+                text-align: center
+
+                .icon
+                    font-size: $medium-text
+                    color: $color-2
+                    margin: 0 5px
+
+            .small-text
+                font-size: 12px
+                text-align: center
+                color: $color-5
+
+                margin: 8px auto
+
+                display: block
+
+    .widget_minimize
+        height: 60px
+        transition: $transition
+        
+        #close-widget
+            opacity: 0 !important
+            transition: $transition
+        #open-widget
+            opacity: 1 !important
+            transition: $transition
+
+    // -> Homepage
+    #home
+        width: 100%
+        height: 100vh
+
+        overflow: hidden
+
+        .cover-background
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+
+            position: fixed
+            z-index: -9
+
+        .wrapper-content
+            height: 520px
+
+            margin-top: 210px
+            display: flex
+            flex-wrap: wrap
+            align-content: center
+
+            .big-title
+                font-size: $big-title
+                font-weight: $text-bold
+                text-align: center
+                color: $color-2
+
+                margin: 25px auto
+
+            p
+                width: 80%
+                font-size: $big-text
+                font-weight: $text-regular
+                text-align: center
+                color: $color-2
+                line-height: 1.8
+                margin: 25px auto
+                padding: 0 100px
+
+            .btn-video
+                width: 480px
+                height: auto
+
+                text-align: center
+
+                margin: 25px auto
+
+                .icon-big
+                    font-size: $extra-title
+                    color: $color-2
+                    margin: 25px auto
+
+                    display: block
+                    cursor: pointer
+
+                .text-video
+                    font-size: $medium-text
+                    color: $color-2
+
+                    margin: 25px auto
+
+        #wrapper-iframe
+            background: rgba(0, 0, 0, .7)
+
+            width: 100%
+            height: 100%
+            
+            top: 0
+            left: 0
+            position: fixed
+            z-index: 999
+
+            display: none
+
+            #close-video
+                font-size: $medium-title
+                color: $color-1
+
+                margin: 50px
+                cursor: pointer
+
+                right: 0
+                position: absolute
+
+            iframe
+                width: 960px
+                height: 560px
+
+                margin: 100px auto
+                display: block
+
+    #product-infos
+        background: $color-2
+
+        width: 100%
+        min-height: 1050px
+
+        padding: 45px 0
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-6
+
+            margin: 50px auto
+            display: block
+
+        .wrapper-content
+            margin-top: 100px
+
+            padding: 25px 0
+
+        .list-posts
+            height: 100%
+
+            .post-item
+                min-height: 470px
+
+                text-align: center
+                padding: 10px 75px
+                border-bottom: 1px solid $color-7
+
+                display: flex
+                align-content: center
+                flex-wrap: wrap
+
+                img
+                    margin: 5px auto
+
+                .title
+                    width: 100%
+
+                    font-size: $small-title
+                    font-weight: $text-bold
+                    color: $color-5
+                    line-height: 1.8
+
+                    padding: 0 100px
+                    margin: 25px auto
+                    display: block
+                
+                p
+                    font-size: $medium-text
+                    font-weight: $text-light
+                    line-height: 1.8
+
+                    margin: 5px auto
+        
+        .slick-dots
+            display: flex
+            justify-content: space-around
+
+            margin: 20px auto
+            margin-top: 50px
+            padding: 0 200px
+
+            li
+                width: 44px
+                height: 44px
+
+                display: flex
+                align-items: center
+
+                border-radius: 100%
+                border: 1px solid $color-1
+
+                position: relative
+
+                button
+                    width: 100%
+                    height: 100%
+
+                    border-radius: 100%
+                    border: none
+                    position: absolute
+
+    #product-differential
+        background: $color-1
+
+        width: 100%
+        min-height: 1150px
+        padding: 45px 0
+
+        position: relative
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-6
+
+            margin: 50px auto
+            display: block
+
+        .wrapper-content
+            height: auto
+
+            margin: 25px auto
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+
+            .tip-item
+                width: calc(100% / 2 - 10px)
+                
+                margin: 25px 5px
+                padding: 10px 0
+                
+                display: flex
+                align-items: center
+
+                .attachment-icon-small
+                    width: 90px
+                    height: 90px
+
+                    margin: 0 5px
+                    padding: 10px
+
+                .wrap-text
+                    height: 100%
+
+                    margin: 0 5px
+                    padding: 0 15px
+
+                    .title
+                        font-size: $small-title
+                        font-weight: $text-bold
+                        color: $color-3
+                        line-height: 1.6
+
+                        margin-bottom: 10px
+
+                    p
+                        font-size: $small-text
+                        font-weight: $text-light
+                        color: $color-5
+                        line-height: 1.6
+
+    #product-price
+        background: $color-6
+        width: 100%
+        min-height: 890px
+
+        padding: 45px 0
+        display: flex
+
+        position: relative
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-1
+
+            display: block
+            margin: 50px auto
+
+            position: relative
+
+
+        .wrapper-price-product
+            width: 100%
+            min-height: 490px
+
+            margin: 20px auto
+
+            display: flex
+            flex-wrap: wrap
+
+            .old-price
+                width: 290px
+                height: auto
+
+                padding: 10px 15px
+
+                top: 90px
+                left: 90px
+                position: relative
+
+                &:after
+                    content: ''
+                    background: $color-1
+                    width: 140px
+                    height: 4px
+
+                    bottom: 40px
+                    position: absolute
+
+            .promotional-price
+                width: 420px
+                height: 210px
+
+                margin: 25px auto
+                margin-top: 50px
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+            .tag
+                font-size: $small-title
+                font-weight: $text-bold
+                color: $color-2
+                margin: 15px 0
+
+            .medium-title
+                font-size: $big-title
+                font-weight: $text-light
+                color: $color-2
+                letter-spacing: 2px
+                
+                margin: 15px auto
+                display: block
+
+            .extra-title
+                width: 100%
+                display: block
+
+                font-size: $extra-title
+                font-weight: $text-bold
+                color: $color-1
+                text-align: center
+                letter-spacing: 2px
+
+                margin: 15px auto
+
+
+            .big-button
+                background: $color-4
+                width: 420px
+                height: 100px
+
+                margin: 0px auto
+                border-radius: 3px
+
+                display: block
+
+                font-size: $medium-title
+                font-weight: $text-bold
+                color: $color-2
+                text-align: center
+                line-height: 4
+            
+        .text-security
+            font-size: $medium-text
+            font-weight: $text-light
+            color: $color-2
+            text-align: center
+
+            display: block
+
+            i
+                margin: 0 10px
+
+    #product-ensure
+        background: $color-2
+        width: 100%
+        min-height: 910px
+
+        padding: 45px 0
+
+        position: relative
+
+        .icon-safe
+            background: $color-1
+            width: 110px
+            height: 110px
+
+            font-size: $big-title
+            text-align: center
+            line-height: 3.2
+
+            border-radius: 100%
+
+            top: -55px
+            left: calc(100% / 2 - 55px)
+            position: absolute
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-5
+
+            display: block
+
+            margin: 50px auto
+
+        .list-of-ensurance
+            margin: 75px auto
+
+            .item-ensurance
+                width: 100%
+                min-height: 420px
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+                .title
+                    font-size: $small-title
+                    font-weight: $text-bold
+                    color: $color-3
+                    text-align: center
+                    margin: 25px auto
+
+                .excerpt
+                    font-size: $medium-text
+                    font-weight: $text-light
+                    line-height: 1.8
+                    color: $color-5
+                    text-align: center
+
+                    margin: 25px auto
+                    padding: 15px 75px
+                
+                .line-block
+                    background: $color-5
+                    width: 25%
+                    height: 1px
+
+                    margin: 15px auto
+
+                    opacity: .3
+
+                    display: block
+
+            .slick-dots
+                width: 50%
+                height: 50px
+
+                margin: 25px auto
+                padding: 0 100px
+
+                display: flex
+                align-content: center
+                align-items: center
+                justify-content: space-around
+
+                li,button
+                    width: 40px
+                    height: 40px
+
+                    border-radius: 100%
+                    border: none
+
+    #product-support
+        background: $color-1
+        width: 100%
+        min-height: 100vh
+
+        padding: 45px 0
+        position: relative
+
+        .title-section
+            font-size: $big-title
+            font-weight: $text-bold
+            text-align: center
+            color: $color-5
+
+            display: block
+
+            margin: 50px auto
+            position: relative
+            
+        .wrapper-content
+            margin-top: 75px
+        
+            .list-of-faqs
+                width: 100%
+                height: 100%
+
+                padding: 10px 5px
+
+                .faq-item
+                    width: 100%
+                    height: 60px
+
+                    border: none
+                    border-radius: 3px
+                    box-shadow: 0px 0px 5px $color-7
+
+                    padding: 20px 10px
+                    margin: 15px auto
+
+                    overflow: hidden
+                    position: relative
+                    cursor: pointer
+
+                    transition: $transition
+
+                    .icon
+                        font-size: $medium-title
+                        color: $color-4
+
+                        top: 18px
+                        right: 15px
+                        position: absolute
+
+                    .title
+                        font-size: $medium-text
+                        font-weight: $text-bold
+                        color: $color-5
+                    
+                    .answer
+                        margin-top: 35px
+                        margin-bottom: 15px
+
+                        p
+                            font-size: $small-text
+                            font-weight: $text-regular
+                            line-height: 1.8
+
+                            opacity: 0
+
+                            transition: $transition
+
+                    &:after
+                        content: ''
+                        background: $color-7
+                        // opacity: .1
+
+                        width: 100%
+                        height: 1px
+
+                        top: 61px
+                        left: 0
+                        position: absolute
+
+                .faq-active
+                    height: auto
+                    padding: 25px 10px
+
+                    transition: $transition
+
+                    .answer
+                        p
+                            opacity: .8 !important
+                            transition: $transition
+
+    #main-footer
+        background: $color-6
+        width: 100%
+        min-height: 360px
+
+        padding: 90px 0
+
+        // Logo
+        .custom-logo-link
+            width: 190px
+            height: 150px
+
+            margin: 10px auto
+            display: block
+
+
+
+        // Menu
+        .menu-awp-primary-container
+            min-height: 250px
+
+            #menu-awp-primary
+                width: 60%
+                height: 100%
+
+                margin: 0 auto
+
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+
+                .menu-item
+                    width: 100%
+
+                    font-size: $medium-text
+                    margin: 15px auto
+
+                    display: block
+
+                    a
+                        color: $color-1
