@@ -1,13 +1,9 @@
 @import 'configs.sass'
 
-// arrumar isso (classe nativa do bootstrap)
-html
-    margin-top: 0 !important
 .container-fluid
     display: flex
 @media #{$information-phone}
-    html
-        margin-top: 0 !important
+
     /* Header */
     .main-header
         width: 100%
@@ -58,7 +54,7 @@ html
                 #close-menu
                     width: 100%
 
-                    font-size: $extra-title
+                    font-size: $fs-56px
                     text-align: center
                     color: $color-1
     
@@ -84,8 +80,8 @@ html
                         text-align: center
 
                         a
-                            font-size: $small-title
-                            font-weight: $text-regular
+                            font-size: $fs-21px
+                            font-weight: $f-regular
                             color: $color-1
                             line-height: 2.2
 
@@ -95,7 +91,7 @@ html
             text-align: right
 
             #open-menu
-                font-size: $big-title
+                font-size: $fs-32px
                 color: $color-1
 
                 padding: 10px
@@ -113,7 +109,7 @@ html
 
         border-radius: 3px
 
-        font-size: $small-title
+        font-size: $fs-21px
         color: $color-1
         text-align: center
         line-height: 2
@@ -154,7 +150,7 @@ html
                 display: none
 
             .btn-widget
-                font-size: $big-text
+                font-size: $fs-18px
                 color: $color-2
 
                 cursor: pointer
@@ -164,8 +160,8 @@ html
                 position: absolute
 
             .title
-                font-size: $small-text
-                font-weight: $text-bold
+                font-size: $fs-14px
+                font-weight: $f-bold
                 color: $color-1
                 line-height: 1.9
                 text-align: left
@@ -201,29 +197,29 @@ html
 
 
                     .text
-                        font-size: $small-text
-                        font-weight: $text-bold
+                        font-size: $fs-14px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
                     
                     .small-price
-                        font-size: $big-text
-                        font-weight: $text-light
+                        font-size: $fs-18px
+                        font-weight: $f-light
 
                         margin: 4px auto
                         display: block
 
                     .medium-price
-                        font-size: $medium-title
-                        font-weight: $text-bold
+                        font-size: $fs-24px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
 
                     .extra-price
-                        font-size: $big-title
-                        font-weight: $text-bold
+                        font-size: $fs-32px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
@@ -237,14 +233,14 @@ html
                 border-radius: 4px
                 display: block
 
-                font-size: $small-text
-                font-weight: $text-bold
+                font-size: $fs-14px
+                font-weight: $f-bold
                 line-height: 2.8 
                 color: $color-2
                 text-align: center
 
                 .icon
-                    font-size: $medium-text
+                    font-size: $fs-16px
                     color: $color-2
                     margin: 0 5px
 
@@ -296,8 +292,8 @@ html
             align-content: center
 
             .big-title
-                font-size: $big-title
-                font-weight: $text-bold
+                font-size: $fs-32px
+                font-weight: $f-bold
                 color: $color-1
                 text-align: center
                 line-height: 1.6
@@ -305,8 +301,8 @@ html
                 margin: 25px auto
 
             p
-                font-size: $medium-text
-                font-weight: $text-light
+                font-size: $fs-16px
+                font-weight: $f-light
                 color: $color-1
                 text-align: center
                 line-height: 1.6
@@ -325,12 +321,12 @@ html
                 align-items: center
 
                 .icon-big
-                    font-size: $extra-title
+                    font-size: $fs-56px
                     color: $color-1
                     margin: 0 10px
 
                 .text-video
-                    font-size: $small-text
+                    font-size: $fs-14px
                     line-height: 1.6
                     color: $color-1
                     margin: 0 10px
@@ -349,7 +345,7 @@ html
                 display: none
 
                 #close-video
-                    font-size: $medium-title
+                    font-size: $fs-24px
                     color: $color-1
 
                     cursor: pointer
@@ -374,8 +370,8 @@ html
         padding: 45px 0
 
         .title-section
-            font-size: $medium-title
-            font-weight: $text-bold
+            font-size: $fs-24px
+            font-weight: $f-bold
             text-align: center
             color: $color-6
 
@@ -409,8 +405,8 @@ html
                 .title
                     width: 100%
 
-                    font-size: $big-text
-                    font-weight: $text-bold
+                    font-size: $fs-18px
+                    font-weight: $f-bold
                     color: $color-5
                     line-height: 1.6
 
@@ -419,8 +415,8 @@ html
                     display: block
                 
                 p
-                    font-size: $small-text
-                    font-weight: $text-light
+                    font-size: $fs-14px
+                    font-weight: $f-light
                     line-height: 1.6
 
                     margin: 5px auto
@@ -463,8 +459,8 @@ html
         position: relative
 
         .title-section
-            font-size: $medium-title
-            font-weight: $text-bold
+            font-size: $fs-24px
+            font-weight: $f-bold
             line-height: 1.6
             text-align: center
             color: $color-6
@@ -509,16 +505,16 @@ html
                     padding: 0 5px
 
                     .title
-                        font-size: $small-title
-                        font-weight: $text-bold
+                        font-size: $fs-21px
+                        font-weight: $f-bold
                         color: $color-3
                         line-height: 1.6
 
                         margin-bottom: 10px
 
                     p
-                        font-size: $small-text
-                        font-weight: $text-light
+                        font-size: $fs-14px
+                        font-weight: $f-light
                         color: $color-5
                         line-height: 1.6
 
@@ -533,8 +529,8 @@ html
         position: relative
 
         .title-section
-            font-size: $medium-title
-            font-weight: $text-bold
+            font-size: $fs-24px
+            font-weight: $f-bold
             line-height: 1.6
             text-align: center
             color: $color-1
@@ -584,14 +580,14 @@ html
                 align-content: center
 
             .tag
-                font-size: $small-title
-                font-weight: $text-bold
+                font-size: $fs-21px
+                font-weight: $f-bold
                 color: $color-2
                 margin: 15px 0
 
             .medium-title
-                font-size: $medium-title
-                font-weight: $text-light
+                font-size: $fs-24px
+                font-weight: $f-light
                 color: $color-2
                 letter-spacing: 2px
                 
@@ -602,8 +598,8 @@ html
                 width: 100%
                 display: block
 
-                font-size: $extra-title
-                font-weight: $text-bold
+                font-size: $fs-56px
+                font-weight: $f-bold
                 color: $color-1
                 text-align: center
                 letter-spacing: 2px
@@ -621,15 +617,15 @@ html
 
                 display: block
 
-                font-size: $medium-title
-                font-weight: $text-bold
+                font-size: $fs-24px
+                font-weight: $f-bold
                 color: $color-2
                 text-align: center
                 line-height: 4
             
         .text-security
-            font-size: $medium-text
-            font-weight: $text-light
+            font-size: $fs-16px
+            font-weight: $f-light
             line-height: 1.6
             color: $color-2
             text-align: center
@@ -653,7 +649,7 @@ html
             width: 110px
             height: 110px
 
-            font-size: $big-title
+            font-size: $fs-32px
             text-align: center
             line-height: 3.2
 
@@ -664,8 +660,8 @@ html
             position: absolute
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
+            font-size: $fs-32px
+            font-weight: $f-bold
             line-height: 1.6
             text-align: center
             color: $color-5
@@ -692,8 +688,8 @@ html
                 align-content: center
 
                 .title
-                    font-size: $small-title
-                    font-weight: $text-bold
+                    font-size: $fs-21px
+                    font-weight: $f-bold
                     line-height: 1.6
                     color: $color-3
                     text-align: center
@@ -702,8 +698,8 @@ html
                     margin: 15px auto
 
                 .excerpt
-                    font-size: $medium-text
-                    font-weight: $text-light
+                    font-size: $fs-16px
+                    font-weight: $f-light
                     line-height: 1.6
                     color: $color-5
                     text-align: center
@@ -750,8 +746,8 @@ html
         position: relative
 
         .title-section
-            font-size: $medium-title
-            font-weight: $text-bold
+            font-size: $fs-24px
+            font-weight: $f-bold
             text-align: center
             line-height: 1.6
             color: $color-5
@@ -789,7 +785,7 @@ html
                     transition: .3s ease-in-all
 
                     .icon
-                        font-size: $medium-title
+                        font-size: $fs-24px
                         color: $color-4
 
                         top: 38px
@@ -797,8 +793,8 @@ html
                         position: absolute
 
                     .title
-                        font-size: $small-text
-                        font-weight: $text-bold
+                        font-size: $fs-14px
+                        font-weight: $f-bold
                         line-height: 1.6
                         color: $color-5
                     
@@ -807,8 +803,8 @@ html
                         margin-bottom: 15px
 
                         p
-                            font-size: $small-text
-                            font-weight: $text-regular
+                            font-size: $fs-14px
+                            font-weight: $f-regular
                             line-height: 1.8
 
                             opacity: .8
@@ -871,7 +867,7 @@ html
                 .menu-item
                     width: 100%
 
-                    font-size: $medium-text
+                    font-size: $fs-16px
                     text-align: center
                     margin: 15px auto
 
@@ -944,8 +940,8 @@ html
                         height: 100%
                         display: block
 
-                        font-size: $small-text
-                        font-weight: $text-bold
+                        font-size: $fs-14px
+                        font-weight: $f-bold
                         color: $color-1
                         text-transform: capitalize
                         line-height: 6.5
@@ -977,13 +973,9 @@ html
             transition-delay: $delay
 
             a
-                font-weight: $text-regular !important
+                font-weight: $f-regular !important
                 color: $color-6 !important
                 line-height: 5.8 !important
-
-    /* Main Content */
-    .content
-        // margin-top: 140px
 
     /* widget preço homepage */
     #open-price-mobile
@@ -997,6 +989,7 @@ html
 
         right: 20px
         bottom: 10px
+        z-index: 99
         position: absolute
 
         overflow: hidden
@@ -1023,7 +1016,7 @@ html
                 transition: $transition
 
             .btn-widget
-                font-size: $big-text
+                font-size: $fs-18px
                 color: $color-2
 
                 cursor: pointer
@@ -1033,8 +1026,8 @@ html
                 position: absolute
 
             .title
-                font-size: $small-text
-                font-weight: $text-bold
+                font-size: $fs-14px
+                font-weight: $f-bold
                 color: $color-1
                 line-height: 1.9
                 text-align: left
@@ -1070,29 +1063,29 @@ html
 
 
                     .text
-                        font-size: $small-text
-                        font-weight: $text-bold
+                        font-size: $fs-14px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
                     
                     .small-price
-                        font-size: $big-text
-                        font-weight: $text-light
+                        font-size: $fs-18px
+                        font-weight: $f-light
 
                         margin: 4px auto
                         display: block
 
                     .medium-price
-                        font-size: $medium-title
-                        font-weight: $text-bold
+                        font-size: $fs-24px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
 
                     .extra-price
-                        font-size: $big-title
-                        font-weight: $text-bold
+                        font-size: $fs-32px
+                        font-weight: $f-bold
 
                         margin: 4px auto
                         display: block
@@ -1106,14 +1099,14 @@ html
                 border-radius: 4px
                 display: block
 
-                font-size: $small-text
-                font-weight: $text-bold
+                font-size: $fs-14px
+                font-weight: $f-bold
                 line-height: 2.8 
                 color: $color-2
                 text-align: center
 
                 .icon
-                    font-size: $medium-text
+                    font-size: $fs-16px
                     color: $color-2
                     margin: 0 5px
 
@@ -1137,21 +1130,16 @@ html
             opacity: 1 !important
             transition: $transition
 
-    // -> Homepage
+    /* HOMEPAGE */
     #home
         width: 100%
         height: 100vh
 
         overflow: hidden
+        position: relative
 
-        .cover-background
-            top: 0
-            right: 0
-            bottom: 0
-            left: 0
-
-            position: fixed
-            z-index: -9
+        &:before
+            @include pattern-home
 
         .wrapper-content
             height: 520px
@@ -1161,9 +1149,12 @@ html
             flex-wrap: wrap
             align-content: center
 
+            z-index: 99
+            position: relative
+
             .big-title
-                font-size: $big-title
-                font-weight: $text-bold
+                font-size: $fs-32px
+                font-weight: $f-bold
                 text-align: center
                 color: $color-2
 
@@ -1171,8 +1162,8 @@ html
 
             p
                 width: 80%
-                font-size: $big-text
-                font-weight: $text-regular
+                font-size: $fs-18px
+                font-weight: $f-regular
                 text-align: center
                 color: $color-2
                 line-height: 1.8
@@ -1188,7 +1179,7 @@ html
                 margin: 25px auto
 
                 .icon-big
-                    font-size: $extra-title
+                    font-size: $fs-56px
                     color: $color-2
                     margin: 25px auto
 
@@ -1196,7 +1187,7 @@ html
                     cursor: pointer
 
                 .text-video
-                    font-size: $medium-text
+                    font-size: $fs-16px
                     color: $color-2
 
                     margin: 25px auto
@@ -1215,7 +1206,7 @@ html
             display: none
 
             #close-video
-                font-size: $medium-title
+                font-size: $fs-24px
                 color: $color-1
 
                 margin: 50px
@@ -1235,129 +1226,85 @@ html
         background: $color-2
 
         width: 100%
-        min-height: 1050px
-
-        padding: 45px 0
+        padding: 25px 0
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
-            text-align: center
+            @include title-section-style
             color: $color-6
 
-            margin: 50px auto
-            display: block
-
         .wrapper-content
-            margin-top: 100px
-
+            margin: auto
             padding: 25px 0
 
-        .list-posts
-            height: 100%
+            .list-posts
+                height: 100%
 
-            .post-item
-                min-height: 470px
+                .post-item
+                    min-height: 430px
 
-                text-align: center
-                padding: 10px 75px
-                border-bottom: 1px solid $color-7
+                    text-align: center
+                    padding: 10px 75px
+                    border-bottom: 1px solid $color-7
 
-                display: flex
-                align-content: center
-                flex-wrap: wrap
+                    display: flex
+                    align-content: center
+                    flex-wrap: wrap
 
-                img
-                    margin: 5px auto
+                    .attachment-hotpage-icon-big
+                        @include icon-big
+                        margin: 15px auto
 
-                .title
-                    width: 100%
+                    .title
+                        width: 100%
 
-                    font-size: $small-title
-                    font-weight: $text-bold
-                    color: $color-5
-                    line-height: 1.8
+                        font-size: $fs-21px
+                        font-weight: $f-bold
+                        color: $color-5
+                        line-height: 1.8
 
-                    padding: 0 100px
-                    margin: 25px auto
-                    display: block
-                
-                p
-                    font-size: $medium-text
-                    font-weight: $text-light
-                    line-height: 1.8
+                        padding: 0 100px
+                        margin: 25px auto
+                        display: block
+                    
+                    p
+                        font-size: $fs-16px
+                        font-weight: $f-light
+                        line-height: 1.8
 
-                    margin: 5px auto
-        
-        .slick-dots
-            display: flex
-            justify-content: space-around
-
-            margin: 20px auto
-            margin-top: 50px
-            padding: 0 200px
-
-            li
-                width: 44px
-                height: 44px
-
-                display: flex
-                align-items: center
-
-                border-radius: 100%
-                border: 1px solid $color-1
-
-                position: relative
-
-                button
-                    width: 100%
-                    height: 100%
-
-                    border-radius: 100%
-                    border: none
-                    position: absolute
+                        margin: 5px auto
+            
+            .slick-dots
+                @include slick-dots-container
 
     #product-differential
         background: $color-1
 
         width: 100%
-        min-height: 1150px
-        padding: 45px 0
+        padding: 25px 0
 
         position: relative
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
-            text-align: center
+            @include title-section-style
             color: $color-6
 
-            margin: 50px auto
-            display: block
-
         .wrapper-content
-            height: auto
-
-            margin: 25px auto
-            display: flex
-            flex-wrap: wrap
-            align-items: center
+            margin: auto
+            margin-top: 50px
+            padding: 25px 0
+            @include flex-box-wrap
 
             .tip-item
-                width: calc(100% / 2 - 10px)
+                width: calc(100% / 2 - 20px)
                 
                 margin: 25px 5px
                 padding: 10px 0
                 
-                display: flex
-                align-items: center
-
-                .attachment-icon-small
-                    width: 90px
-                    height: 90px
-
-                    margin: 0 5px
-                    padding: 10px
+                @include flex-box-inline
+                
+                .attachment-hotpage-icon-medium
+                    @include icon-medium
+                    margin: 5px 15px
 
                 .wrap-text
                     height: 100%
@@ -1366,16 +1313,16 @@ html
                     padding: 0 15px
 
                     .title
-                        font-size: $small-title
-                        font-weight: $text-bold
+                        font-size: $fs-21px
+                        font-weight: $f-bold
                         color: $color-3
                         line-height: 1.6
 
                         margin-bottom: 10px
 
                     p
-                        font-size: $small-text
-                        font-weight: $text-light
+                        font-size: $fs-14px
+                        font-weight: $f-regular
                         color: $color-5
                         line-height: 1.6
 
@@ -1390,15 +1337,8 @@ html
         position: relative
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
-            text-align: center
+            @include title-section-style
             color: $color-1
-
-            display: block
-            margin: 50px auto
-
-            position: relative
 
 
         .wrapper-price-product
@@ -1441,14 +1381,14 @@ html
                 align-content: center
 
             .tag
-                font-size: $small-title
-                font-weight: $text-bold
+                font-size: $fs-21px
+                font-weight: $f-bold
                 color: $color-2
                 margin: 15px 0
 
             .medium-title
-                font-size: $big-title
-                font-weight: $text-light
+                font-size: $fs-32px
+                font-weight: $f-light
                 color: $color-2
                 letter-spacing: 2px
                 
@@ -1459,8 +1399,8 @@ html
                 width: 100%
                 display: block
 
-                font-size: $extra-title
-                font-weight: $text-bold
+                font-size: $fs-56px
+                font-weight: $f-bold
                 color: $color-1
                 text-align: center
                 letter-spacing: 2px
@@ -1478,15 +1418,15 @@ html
 
                 display: block
 
-                font-size: $medium-title
-                font-weight: $text-bold
+                font-size: $fs-24px
+                font-weight: $f-bold
                 color: $color-2
                 text-align: center
                 line-height: 4
             
         .text-security
-            font-size: $medium-text
-            font-weight: $text-light
+            font-size: $fs-16px
+            font-weight: $f-light
             color: $color-2
             text-align: center
 
@@ -1498,9 +1438,7 @@ html
     #product-ensure
         background: $color-2
         width: 100%
-        min-height: 910px
-
-        padding: 45px 0
+        padding: 25px 0
 
         position: relative
 
@@ -1509,7 +1447,7 @@ html
             width: 110px
             height: 110px
 
-            font-size: $big-title
+            font-size: $fs-32px
             text-align: center
             line-height: 3.2
 
@@ -1520,36 +1458,30 @@ html
             position: absolute
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
-            text-align: center
+            @include title-section-style
             color: $color-5
 
-            display: block
-
-            margin: 50px auto
-
-        .list-of-ensurance
-            margin: 75px auto
+        .wrapper-content
+            margin: auto
+            margin-top: 50px
+            padding: 25px 0
 
             .item-ensurance
-                width: 100%
-                min-height: 420px
-
-                display: flex
-                flex-wrap: wrap
-                align-content: center
+                width: 80%
+                min-height: 320px
+                margin: 10px auto
+                @include flex-box-wrap
 
                 .title
-                    font-size: $small-title
-                    font-weight: $text-bold
+                    font-size: $fs-21px
+                    font-weight: $f-bold
                     color: $color-3
                     text-align: center
                     margin: 25px auto
 
                 .excerpt
-                    font-size: $medium-text
-                    font-weight: $text-light
+                    font-size: $fs-16px
+                    font-weight: $f-regular
                     line-height: 1.8
                     color: $color-5
                     text-align: center
@@ -1569,23 +1501,7 @@ html
                     display: block
 
             .slick-dots
-                width: 50%
-                height: 50px
-
-                margin: 25px auto
-                padding: 0 100px
-
-                display: flex
-                align-content: center
-                align-items: center
-                justify-content: space-around
-
-                li,button
-                    width: 40px
-                    height: 40px
-
-                    border-radius: 100%
-                    border: none
+                @include slick-dots-container
 
     #product-support
         background: $color-1
@@ -1596,18 +1512,12 @@ html
         position: relative
 
         .title-section
-            font-size: $big-title
-            font-weight: $text-bold
-            text-align: center
+            @include title-section-style
             color: $color-5
-
-            display: block
-
-            margin: 50px auto
-            position: relative
             
         .wrapper-content
-            margin-top: 75px
+            margin: auto
+            padding: 25px 0
         
             .list-of-faqs
                 width: 100%
@@ -1633,7 +1543,7 @@ html
                     transition: $transition
 
                     .icon
-                        font-size: $medium-title
+                        font-size: $fs-24px
                         color: $color-4
 
                         top: 18px
@@ -1641,8 +1551,8 @@ html
                         position: absolute
 
                     .title
-                        font-size: $medium-text
-                        font-weight: $text-bold
+                        font-size: $fs-16px
+                        font-weight: $f-bold
                         color: $color-5
                     
                     .answer
@@ -1650,8 +1560,8 @@ html
                         margin-bottom: 15px
 
                         p
-                            font-size: $small-text
-                            font-weight: $text-regular
+                            font-size: $fs-14px
+                            font-weight: $f-regular
                             line-height: 1.8
 
                             opacity: 0
@@ -1671,7 +1581,7 @@ html
                         position: absolute
 
                 .faq-active
-                    height: auto
+                    height: 190px
                     padding: 25px 10px
 
                     transition: $transition
@@ -1715,7 +1625,7 @@ html
                 .menu-item
                     width: 100%
 
-                    font-size: $medium-text
+                    font-size: $fs-16px
                     margin: 15px auto
 
                     display: block

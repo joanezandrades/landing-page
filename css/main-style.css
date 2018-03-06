@@ -1,20 +1,31 @@
 @charset "UTF-8";
+html {
+  background: #ffffff;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  html b {
+    font-weight: 500; }
+
+a, a:hover {
+  text-decoration: none;
+  color: auto; }
+
 h1, h2, h3, h4, h5, h6, p, span, ul, li, label, a, address, ol {
   font-family: "Open Sans", "sans-serif"; }
 
 a, a:hover {
   text-decoration: none; }
 
-html {
-  margin-top: 0 !important; }
-
+/*  Mixin Patterns */
+/* Mixin Title section */
+/* Mixins Slick dots */
+/* Mixins Icons */
+/* Mixin Flex */
 .container-fluid {
   display: flex; }
 
 @media only screen and (max-width: 420px) {
-  html {
-    margin-top: 0 !important; }
-
   /* Header */
   .main-header {
     width: 100%;
@@ -48,7 +59,7 @@ html {
         margin-top: 45%; }
         .main-header .container-menu .main-nav #close-menu {
           width: 100%;
-          font-size: 72px;
+          font-size: 56px;
           text-align: center;
           color: #ffffff;
           padding: 10px;
@@ -66,7 +77,7 @@ html {
             margin: 10px auto;
             text-align: center; }
             .main-header .container-menu .main-nav .hotpage-main-menu .menu-item a {
-              font-size: 22px;
+              font-size: 21px;
               font-weight: 400;
               color: #ffffff;
               line-height: 2.2; }
@@ -74,7 +85,7 @@ html {
       position: relative;
       text-align: right; }
       .main-header .btns-mobile #open-menu {
-        font-size: 36px;
+        font-size: 32px;
         color: #ffffff;
         padding: 10px;
         top: 10px;
@@ -87,7 +98,7 @@ html {
     width: 44px;
     height: 44px;
     border-radius: 3px;
-    font-size: 22px;
+    font-size: 21px;
     color: #ffffff;
     text-align: center;
     line-height: 2;
@@ -117,14 +128,14 @@ html {
       .container_widget .head_widget #open-widget {
         display: none; }
       .container_widget .head_widget .btn-widget {
-        font-size: 20px;
+        font-size: 18px;
         color: #f5f5f5;
         cursor: pointer;
         top: 20px;
         right: 10px;
         position: absolute; }
       .container_widget .head_widget .title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         color: #ffffff;
         line-height: 1.9;
@@ -150,22 +161,22 @@ html {
           text-align: center;
           display: block; }
           .container_widget .content_widget .list .list-item .text {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .small-price {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 300;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .medium-price {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .extra-price {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
@@ -176,13 +187,13 @@ html {
         margin: 4px auto;
         border-radius: 4px;
         display: block;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         line-height: 2.8;
         color: #f5f5f5;
         text-align: center; }
         .container_widget .content_widget .sell-button .icon {
-          font-size: 18px;
+          font-size: 16px;
           color: #f5f5f5;
           margin: 0 5px; }
       .container_widget .content_widget .small-text {
@@ -220,14 +231,14 @@ html {
       flex-wrap: wrap;
       align-content: center; }
       #home .wrapper-content .big-title {
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
         color: #ffffff;
         text-align: center;
         line-height: 1.6;
         margin: 25px auto; }
       #home .wrapper-content p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
         color: #ffffff;
         text-align: center;
@@ -241,11 +252,11 @@ html {
         display: flex;
         align-items: center; }
         #home .wrapper-content .btn-video .icon-big {
-          font-size: 72px;
+          font-size: 56px;
           color: #ffffff;
           margin: 0 10px; }
         #home .wrapper-content .btn-video .text-video {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.6;
           color: #ffffff;
           margin: 0 10px; }
@@ -259,7 +270,7 @@ html {
         z-index: 999;
         display: none; }
         #home .wrapper-content #wrapper-iframe #close-video {
-          font-size: 26px;
+          font-size: 24px;
           color: #ffffff;
           cursor: pointer;
           top: 120px;
@@ -277,7 +288,7 @@ html {
     min-height: 1050px;
     padding: 45px 0; }
     #product-infos .title-section {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       text-align: center;
       color: #071930;
@@ -302,7 +313,7 @@ html {
           margin: 5px auto; }
         #product-infos .list-posts .post-item .title {
           width: 100%;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 700;
           color: #58595A;
           line-height: 1.6;
@@ -310,7 +321,7 @@ html {
           margin: 15px auto;
           display: block; }
         #product-infos .list-posts .post-item p {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.6;
           margin: 5px auto; }
@@ -342,7 +353,7 @@ html {
     padding: 45px 0;
     position: relative; }
     #product-differential .title-section {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -377,13 +388,13 @@ html {
           margin-left: 85px;
           padding: 0 5px; }
           #product-differential .wrapper-content .tip-item .wrap-text .title {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 700;
             color: #851934;
             line-height: 1.6;
             margin-bottom: 10px; }
           #product-differential .wrapper-content .tip-item .wrap-text p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             color: #58595A;
             line-height: 1.6; }
@@ -396,7 +407,7 @@ html {
     align-items: center;
     position: relative; }
     #product-price .title-section {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -432,12 +443,12 @@ html {
         flex-wrap: wrap;
         align-content: center; }
       #product-price .wrapper-price-product .tag {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 700;
         color: #f5f5f5;
         margin: 15px 0; }
       #product-price .wrapper-price-product .medium-title {
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 300;
         color: #f5f5f5;
         letter-spacing: 2px;
@@ -446,7 +457,7 @@ html {
       #product-price .wrapper-price-product .extra-title {
         width: 100%;
         display: block;
-        font-size: 72px;
+        font-size: 56px;
         font-weight: 700;
         color: #ffffff;
         text-align: center;
@@ -459,13 +470,13 @@ html {
         margin: 25px auto;
         border-radius: 3px;
         display: block;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         color: #f5f5f5;
         text-align: center;
         line-height: 4; }
     #product-price .text-security {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       line-height: 1.6;
       color: #f5f5f5;
@@ -484,7 +495,7 @@ html {
       background: #ffffff;
       width: 110px;
       height: 110px;
-      font-size: 36px;
+      font-size: 32px;
       text-align: center;
       line-height: 3.2;
       border-radius: 100%;
@@ -492,7 +503,7 @@ html {
       left: calc(100% / 2 - 55px);
       position: absolute; }
     #product-ensure .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -513,7 +524,7 @@ html {
         flex-wrap: wrap;
         align-content: center; }
         #product-ensure .list-of-ensurance .item-ensurance .title {
-          font-size: 22px;
+          font-size: 21px;
           font-weight: 700;
           line-height: 1.6;
           color: #851934;
@@ -521,7 +532,7 @@ html {
           padding: 0 10px;
           margin: 15px auto; }
         #product-ensure .list-of-ensurance .item-ensurance .excerpt {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           line-height: 1.6;
           color: #58595A;
@@ -557,7 +568,7 @@ html {
     padding: 90px 0;
     position: relative; }
     #product-support .title-section {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       text-align: center;
       line-height: 1.6;
@@ -585,13 +596,13 @@ html {
           cursor: pointer;
           transition: 0.3s ease-in-all; }
           #product-support .wrapper-content .list-of-faqs .faq-item .icon {
-            font-size: 26px;
+            font-size: 24px;
             color: #F24738;
             top: 38px;
             right: 15px;
             position: absolute; }
           #product-support .wrapper-content .list-of-faqs .faq-item .title {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.6;
             color: #58595A; }
@@ -599,7 +610,7 @@ html {
             margin-top: 35px;
             margin-bottom: 15px; }
             #product-support .wrapper-content .list-of-faqs .faq-item .answer p {
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 400;
               line-height: 1.8;
               opacity: 0.8; }
@@ -643,7 +654,7 @@ html {
         align-content: center; }
         #main-footer .menu-awp-primary-container #menu-awp-primary .menu-item {
           width: 100%;
-          font-size: 18px;
+          font-size: 16px;
           text-align: center;
           margin: 15px auto;
           display: block; }
@@ -693,7 +704,7 @@ html {
           .main-header .main-nav .hotpage-main-menu .menu-item a {
             height: 100%;
             display: block;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             color: #ffffff;
             text-transform: capitalize;
@@ -721,7 +732,6 @@ html {
         color: #071930 !important;
         line-height: 5.8 !important; }
 
-  /* Main Content */
   /* widget preço homepage */
   #open-price-mobile {
     display: none; }
@@ -733,6 +743,7 @@ html {
     border-radius: 4px;
     right: 20px;
     bottom: 10px;
+    z-index: 99;
     position: absolute;
     overflow: hidden;
     transition: 500ms ease 200ms; }
@@ -751,14 +762,14 @@ html {
         opacity: 0;
         transition: 500ms ease 200ms; }
       .container_widget .head_widget .btn-widget {
-        font-size: 20px;
+        font-size: 18px;
         color: #f5f5f5;
         cursor: pointer;
         top: 20px;
         right: 10px;
         position: absolute; }
       .container_widget .head_widget .title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         color: #ffffff;
         line-height: 1.9;
@@ -784,22 +795,22 @@ html {
           text-align: center;
           display: block; }
           .container_widget .content_widget .list .list-item .text {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .small-price {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 300;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .medium-price {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
           .container_widget .content_widget .list .list-item .extra-price {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             margin: 4px auto;
             display: block; }
@@ -810,13 +821,13 @@ html {
         margin: 4px auto;
         border-radius: 4px;
         display: block;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         line-height: 2.8;
         color: #f5f5f5;
         text-align: center; }
         .container_widget .content_widget .sell-button .icon {
-          font-size: 18px;
+          font-size: 16px;
           color: #f5f5f5;
           margin: 0 5px; }
       .container_widget .content_widget .small-text {
@@ -836,32 +847,42 @@ html {
       opacity: 1 !important;
       transition: 500ms ease 200ms; }
 
+  /* HOMEPAGE */
   #home {
     width: 100%;
     height: 100vh;
-    overflow: hidden; }
-    #home .cover-background {
+    overflow: hidden;
+    position: relative; }
+    #home:before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      position: fixed;
-      z-index: -9; }
+      opacity: 0.5;
+      z-index: 1;
+      position: absolute; }
     #home .wrapper-content {
       height: 520px;
       margin-top: 210px;
       display: flex;
       flex-wrap: wrap;
-      align-content: center; }
+      align-content: center;
+      z-index: 99;
+      position: relative; }
       #home .wrapper-content .big-title {
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
         text-align: center;
         color: #f5f5f5;
         margin: 25px auto; }
       #home .wrapper-content p {
         width: 80%;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         text-align: center;
         color: #f5f5f5;
@@ -874,13 +895,13 @@ html {
         text-align: center;
         margin: 25px auto; }
         #home .wrapper-content .btn-video .icon-big {
-          font-size: 72px;
+          font-size: 56px;
           color: #f5f5f5;
           margin: 25px auto;
           display: block;
           cursor: pointer; }
         #home .wrapper-content .btn-video .text-video {
-          font-size: 18px;
+          font-size: 16px;
           color: #f5f5f5;
           margin: 25px auto; }
     #home #wrapper-iframe {
@@ -893,7 +914,7 @@ html {
       z-index: 999;
       display: none; }
       #home #wrapper-iframe #close-video {
-        font-size: 26px;
+        font-size: 24px;
         color: #ffffff;
         margin: 50px;
         cursor: pointer;
@@ -908,108 +929,99 @@ html {
   #product-infos {
     background: #f5f5f5;
     width: 100%;
-    min-height: 1050px;
-    padding: 45px 0; }
+    padding: 25px 0; }
     #product-infos .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       text-align: center;
-      color: #071930;
-      margin: 50px auto;
-      display: block; }
+      margin: 25px auto;
+      display: block;
+      color: #071930; }
     #product-infos .wrapper-content {
-      margin-top: 100px;
+      margin: auto;
       padding: 25px 0; }
-    #product-infos .list-posts {
-      height: 100%; }
-      #product-infos .list-posts .post-item {
-        min-height: 470px;
-        text-align: center;
-        padding: 10px 75px;
-        border-bottom: 1px solid rgba(88, 89, 90, 0.1);
+      #product-infos .wrapper-content .list-posts {
+        height: 100%; }
+        #product-infos .wrapper-content .list-posts .post-item {
+          min-height: 430px;
+          text-align: center;
+          padding: 10px 75px;
+          border-bottom: 1px solid rgba(88, 89, 90, 0.1);
+          display: flex;
+          align-content: center;
+          flex-wrap: wrap; }
+          #product-infos .wrapper-content .list-posts .post-item .attachment-hotpage-icon-big {
+            widht: 96px;
+            height: 96px;
+            margin: 15px auto; }
+          #product-infos .wrapper-content .list-posts .post-item .title {
+            width: 100%;
+            font-size: 21px;
+            font-weight: 700;
+            color: #58595A;
+            line-height: 1.8;
+            padding: 0 100px;
+            margin: 25px auto;
+            display: block; }
+          #product-infos .wrapper-content .list-posts .post-item p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+            margin: 5px auto; }
+      #product-infos .wrapper-content .slick-dots {
+        width: 380px;
         display: flex;
-        align-content: center;
-        flex-wrap: wrap; }
-        #product-infos .list-posts .post-item img {
-          margin: 5px auto; }
-        #product-infos .list-posts .post-item .title {
-          width: 100%;
-          font-size: 22px;
-          font-weight: 700;
-          color: #58595A;
-          line-height: 1.8;
-          padding: 0 100px;
-          margin: 25px auto;
-          display: block; }
-        #product-infos .list-posts .post-item p {
-          font-size: 18px;
-          font-weight: 300;
-          line-height: 1.8;
-          margin: 5px auto; }
-    #product-infos .slick-dots {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px auto;
-      margin-top: 50px;
-      padding: 0 200px; }
-      #product-infos .slick-dots li {
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        border-radius: 100%;
-        border: 1px solid #ffffff;
-        position: relative; }
-        #product-infos .slick-dots li button {
-          width: 100%;
-          height: 100%;
+        justify-content: space-around;
+        margin: 10px auto; }
+        #product-infos .wrapper-content .slick-dots li {
+          background: #ffffff;
+          width: 24px;
+          height: 24px;
           border-radius: 100%;
-          border: none;
-          position: absolute; }
+          border: 1px solid #ffffff; }
+          #product-infos .wrapper-content .slick-dots li button {
+            opacity: 0; }
 
   #product-differential {
     background: #ffffff;
     width: 100%;
-    min-height: 1150px;
-    padding: 45px 0;
+    padding: 25px 0;
     position: relative; }
     #product-differential .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       text-align: center;
-      color: #071930;
-      margin: 50px auto;
-      display: block; }
-    #product-differential .wrapper-content {
-      height: auto;
       margin: 25px auto;
+      display: block;
+      color: #071930; }
+    #product-differential .wrapper-content {
+      margin: auto;
+      margin-top: 50px;
+      padding: 25px 0;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center; }
+      flex-wrap: wrap; }
       #product-differential .wrapper-content .tip-item {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 20px);
         margin: 25px 5px;
         padding: 10px 0;
-        display: flex;
-        align-items: center; }
-        #product-differential .wrapper-content .tip-item .attachment-icon-small {
-          width: 90px;
-          height: 90px;
-          margin: 0 5px;
-          padding: 10px; }
+        display: flex; }
+        #product-differential .wrapper-content .tip-item .attachment-hotpage-icon-medium {
+          width: 64px;
+          height: 64px;
+          margin: 5px 15px; }
         #product-differential .wrapper-content .tip-item .wrap-text {
           height: 100%;
           margin: 0 5px;
           padding: 0 15px; }
           #product-differential .wrapper-content .tip-item .wrap-text .title {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 700;
             color: #851934;
             line-height: 1.6;
             margin-bottom: 10px; }
           #product-differential .wrapper-content .tip-item .wrap-text p {
-            font-size: 16px;
-            font-weight: 300;
+            font-size: 14px;
+            font-weight: 400;
             color: #58595A;
             line-height: 1.6; }
 
@@ -1021,13 +1033,12 @@ html {
     display: flex;
     position: relative; }
     #product-price .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       text-align: center;
-      color: #ffffff;
+      margin: 25px auto;
       display: block;
-      margin: 50px auto;
-      position: relative; }
+      color: #ffffff; }
     #product-price .wrapper-price-product {
       width: 100%;
       min-height: 490px;
@@ -1057,12 +1068,12 @@ html {
         flex-wrap: wrap;
         align-content: center; }
       #product-price .wrapper-price-product .tag {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 700;
         color: #f5f5f5;
         margin: 15px 0; }
       #product-price .wrapper-price-product .medium-title {
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 300;
         color: #f5f5f5;
         letter-spacing: 2px;
@@ -1071,7 +1082,7 @@ html {
       #product-price .wrapper-price-product .extra-title {
         width: 100%;
         display: block;
-        font-size: 72px;
+        font-size: 56px;
         font-weight: 700;
         color: #ffffff;
         text-align: center;
@@ -1084,13 +1095,13 @@ html {
         margin: 0px auto;
         border-radius: 3px;
         display: block;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         color: #f5f5f5;
         text-align: center;
         line-height: 4; }
     #product-price .text-security {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       color: #f5f5f5;
       text-align: center;
@@ -1101,14 +1112,13 @@ html {
   #product-ensure {
     background: #f5f5f5;
     width: 100%;
-    min-height: 910px;
-    padding: 45px 0;
+    padding: 25px 0;
     position: relative; }
     #product-ensure .icon-safe {
       background: #ffffff;
       width: 110px;
       height: 110px;
-      font-size: 36px;
+      font-size: 32px;
       text-align: center;
       line-height: 3.2;
       border-radius: 100%;
@@ -1116,55 +1126,56 @@ html {
       left: calc(100% / 2 - 55px);
       position: absolute; }
     #product-ensure .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       text-align: center;
-      color: #58595A;
+      margin: 25px auto;
       display: block;
-      margin: 50px auto; }
-    #product-ensure .list-of-ensurance {
-      margin: 75px auto; }
-      #product-ensure .list-of-ensurance .item-ensurance {
-        width: 100%;
-        min-height: 420px;
+      color: #58595A; }
+    #product-ensure .wrapper-content {
+      margin: auto;
+      margin-top: 50px;
+      padding: 25px 0; }
+      #product-ensure .wrapper-content .item-ensurance {
+        width: 80%;
+        min-height: 320px;
+        margin: 10px auto;
         display: flex;
-        flex-wrap: wrap;
-        align-content: center; }
-        #product-ensure .list-of-ensurance .item-ensurance .title {
-          font-size: 22px;
+        flex-wrap: wrap; }
+        #product-ensure .wrapper-content .item-ensurance .title {
+          font-size: 21px;
           font-weight: 700;
           color: #851934;
           text-align: center;
           margin: 25px auto; }
-        #product-ensure .list-of-ensurance .item-ensurance .excerpt {
-          font-size: 18px;
-          font-weight: 300;
+        #product-ensure .wrapper-content .item-ensurance .excerpt {
+          font-size: 16px;
+          font-weight: 400;
           line-height: 1.8;
           color: #58595A;
           text-align: center;
           margin: 25px auto;
           padding: 15px 75px; }
-        #product-ensure .list-of-ensurance .item-ensurance .line-block {
+        #product-ensure .wrapper-content .item-ensurance .line-block {
           background: #58595A;
           width: 25%;
           height: 1px;
           margin: 15px auto;
           opacity: 0.3;
           display: block; }
-      #product-ensure .list-of-ensurance .slick-dots {
-        width: 50%;
-        height: 50px;
-        margin: 25px auto;
-        padding: 0 100px;
+      #product-ensure .wrapper-content .slick-dots {
+        width: 380px;
         display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: space-around; }
-        #product-ensure .list-of-ensurance .slick-dots li, #product-ensure .list-of-ensurance .slick-dots button {
-          width: 40px;
-          height: 40px;
+        justify-content: space-around;
+        margin: 10px auto; }
+        #product-ensure .wrapper-content .slick-dots li {
+          background: #ffffff;
+          width: 24px;
+          height: 24px;
           border-radius: 100%;
-          border: none; }
+          border: 1px solid #ffffff; }
+          #product-ensure .wrapper-content .slick-dots li button {
+            opacity: 0; }
 
   #product-support {
     background: #ffffff;
@@ -1173,15 +1184,15 @@ html {
     padding: 45px 0;
     position: relative; }
     #product-support .title-section {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       text-align: center;
-      color: #58595A;
+      margin: 25px auto;
       display: block;
-      margin: 50px auto;
-      position: relative; }
+      color: #58595A; }
     #product-support .wrapper-content {
-      margin-top: 75px; }
+      margin: auto;
+      padding: 25px 0; }
       #product-support .wrapper-content .list-of-faqs {
         width: 100%;
         height: 100%;
@@ -1199,20 +1210,20 @@ html {
           cursor: pointer;
           transition: 500ms ease 200ms; }
           #product-support .wrapper-content .list-of-faqs .faq-item .icon {
-            font-size: 26px;
+            font-size: 24px;
             color: #F24738;
             top: 18px;
             right: 15px;
             position: absolute; }
           #product-support .wrapper-content .list-of-faqs .faq-item .title {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             color: #58595A; }
           #product-support .wrapper-content .list-of-faqs .faq-item .answer {
             margin-top: 35px;
             margin-bottom: 15px; }
             #product-support .wrapper-content .list-of-faqs .faq-item .answer p {
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 400;
               line-height: 1.8;
               opacity: 0;
@@ -1226,7 +1237,7 @@ html {
             left: 0;
             position: absolute; }
         #product-support .wrapper-content .list-of-faqs .faq-active {
-          height: auto;
+          height: 190px;
           padding: 25px 10px;
           transition: 500ms ease 200ms; }
           #product-support .wrapper-content .list-of-faqs .faq-active .answer p {
@@ -1254,7 +1265,7 @@ html {
         align-content: center; }
         #main-footer .menu-awp-primary-container #menu-awp-primary .menu-item {
           width: 100%;
-          font-size: 18px;
+          font-size: 16px;
           margin: 15px auto;
           display: block; }
           #main-footer .menu-awp-primary-container #menu-awp-primary .menu-item a {

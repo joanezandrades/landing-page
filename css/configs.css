@@ -1,20 +1,25 @@
-@media only screen and (max-width: 420px) {
-  html {
-    background: #ffffff;
-    font-family: "Open Sans", "sans-serif";
-    font-size: 62.5%;
-    overflow-x: hidden; } }
-@media only screen and (min-width: 1280px) {
-  html {
-    background: #ffffff;
-    font-family: "Open Sans", "sans-serif";
-    font-size: 62.5%;
-    overflow-x: hidden; }
-    html b {
-      font-weight: 500; } }
+html {
+  background: #ffffff;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  html b {
+    font-weight: 500; }
 
 a, a:hover {
   text-decoration: none;
   color: auto; }
+
+h1, h2, h3, h4, h5, h6, p, span, ul, li, label, a, address, ol {
+  font-family: "Open Sans", "sans-serif"; }
+
+a, a:hover {
+  text-decoration: none; }
+
+/*  Mixin Patterns */
+/* Mixin Title section */
+/* Mixins Slick dots */
+/* Mixins Icons */
+/* Mixin Flex */
 
 /*# sourceMappingURL=configs.css.map */

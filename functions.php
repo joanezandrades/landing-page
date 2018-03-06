@@ -89,10 +89,10 @@ if( ! function_exists( 'hotpage_setup' ) ) {
         /**
          * Add Image size
          */ 
-        add_image_size( 'hotpage-full-size', 1366, 768, true );
-        add_image_size( 'hotpage-icon-big', 148, 148, true );
-        add_image_size( 'hotpage-icon-medium', 96, 96, true );
-        add_image_size( 'hotpage-icon-small', 44, 44, true );
+        add_image_size( 'hotpage-full-thumb', 1366, 768, true );
+        add_image_size( 'hotpage-icon-big', 96, 96, true );
+        add_image_size( 'hotpage-icon-medium', 64, 64, true );
+        add_image_size( 'hotpage-icon-small', 32, 32, true );
 
         /** 
          * Register Nav Menus
@@ -102,6 +102,14 @@ if( ! function_exists( 'hotpage_setup' ) ) {
             'footer-menu'   => __('Footer Menu', 'footer-menu')
         ) );
 
+
+        /**
+         * Remove admin bar
+        */
+        function remove_admin_bar() {
+            return false;
+        }
+        add_action( 'show_admin_bar', 'remove_admin_bar' );
         /***
          * Include da template tags
         */
