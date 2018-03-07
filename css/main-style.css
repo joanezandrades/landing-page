@@ -115,7 +115,8 @@ a, a:hover {
     top: 110px;
     position: absolute;
     overflow: hidden;
-    transition: 500ms ease 200ms; }
+    transition: 500ms ease 200ms;
+    display: none; }
     .container_widget .head_widget {
       background: #071930;
       width: 100%;
@@ -211,25 +212,29 @@ a, a:hover {
     background: #071930;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
-    overflow: hidden; }
-    #home .cover-background {
-      background-size: auto 100%;
-      background-position: center;
+    z-index: 1; }
+    #home:before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
       top: 0;
-      left: 0;
       right: 0;
       bottom: 0;
-      z-index: -9;
-      opacity: 0.6;
+      left: 0;
+      opacity: 0.5;
+      z-index: 1;
       position: absolute; }
     #home .wrapper-content {
       height: 75%;
       top: 120px;
       position: relative;
       flex-wrap: wrap;
-      align-content: center; }
+      align-content: center;
+      z-index: 99; }
       #home .wrapper-content .big-title {
         font-size: 32px;
         font-weight: 700;
@@ -1254,6 +1259,9 @@ a, a:hover {
       height: 150px;
       margin: 10px auto;
       display: block; }
+      #main-footer .custom-logo-link .custom-logo {
+        width: 100%;
+        height: auto; }
     #main-footer .menu-awp-primary-container {
       min-height: 250px; }
       #main-footer .menu-awp-primary-container #menu-awp-primary {

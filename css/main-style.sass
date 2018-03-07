@@ -133,6 +133,8 @@
 
         transition: $transition
 
+        display: none
+
         .head_widget
             background: $color-6
             width: 100%
@@ -262,24 +264,12 @@
         width: 100%
         height: 100vh
 
+        overflow: hidden
         position: relative
         z-index: 1
 
-        overflow: hidden
-
-        // -> Cover
-        .cover-background
-            background-size: auto 100%
-            background-position: center
-
-            top: 0
-            left: 0
-            right: 0
-            bottom: 0
-
-            z-index: -9
-            opacity: .6
-            position: absolute
+        &:before
+            @include pattern-home
 
         // -> Content home
         .wrapper-content
@@ -290,6 +280,7 @@
 
             flex-wrap: wrap
             align-content: center
+            z-index: 99
 
             .big-title
                 font-size: $fs-32px
@@ -1605,6 +1596,10 @@
 
             margin: 10px auto
             display: block
+
+            .custom-logo
+                width: 100%
+                height: auto
 
 
 
